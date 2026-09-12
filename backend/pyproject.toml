@@ -12,3 +12,8 @@ extend-immutable-calls = [
 
 [tool.ruff.lint.per-file-ignores]
 "__init__.py" = ["F401"]
+
+
+[tool.isort]
+profile = "black"
+known_first_party = ["app"]
