@@ -1,0 +1,14 @@
+[tool.ruff]
+lint.select = ["E", "F", "B"]
+
+[tool.ruff.lint.flake8-bugbear]
+extend-immutable-calls = [
+    "fastapi.Depends",
+    "fastapi.params.Depends",
+    "Depends",
+    "fastapi.Security",
+    "Security"
+]
+
+[tool.ruff.lint.per-file-ignores]
+"__init__.py" = ["F401"]
